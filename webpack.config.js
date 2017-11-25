@@ -4,10 +4,10 @@ const webpack = require("webpack")
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const OpenBrowserPlugin = require("open-browser-webpack-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
 	devtool: "cheap-module-eval-source-map",
-
 	entry: [
 		"react-hot-loader/patch",
 		"webpack-dev-server/client?http://localhost:8080",
@@ -63,6 +63,8 @@ const config = {
 					publicPath: "../"
 				}),
 			},
+			{ test: /\.html/, loader: 'file?name=[name].[ext]' },
+			
 	{test: /\.(jpe?g|png|gif|svg)$/i, loader: "url-loader?name=app/images/[name].[ext]"},
       { test: /\.eot(\?v=\d+.\d+.\d+)?$/, use: "file-loader?&name=fonts/[name].[ext]" },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]" },
@@ -90,6 +92,7 @@ const config = {
 		new CopyWebpackPlugin([{ from: "vendors", to: "vendors" }]),
 		new OpenBrowserPlugin({ url: "http://localhost:8080" }),
 		new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebpackPlugin()
 	],
 }
 

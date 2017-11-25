@@ -19,8 +19,6 @@ const Root = () => (
       <Route path="/contact" component={ContactPage}/>
       <Route path="/projects" component={ProjectsLandingPage}/>
       <Route path="/my-projects/:projectName" component={ProjectPage}/>
-
-
     </div>
   </Router>
 )

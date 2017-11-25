@@ -1,26 +1,22 @@
 
 import React from 'react';
 import Slider from 'react-slick';
+import Carousel from 'nuka-carousel'
 
 class AutomaticCarousel extends React.Component {
+
   render () {
-    const settings = {
-      dots: false,
-      arrows:false,
-      infinite: true,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 150,
-      className: 'custom-carousel-class',
-    };
     const images = this.props.imagePaths.map((path, index) => {
-      return (<div key={index}><img src={path} /></div>      )
+      return (<img key={index} src={path} />      )
     })
-    return (
-      <Slider className="automatic-carousel" {...settings}>
-        {images}
-      </Slider>
-    );
-  }
+  return (
+    <Carousel className="automatic-carousel"
+              width="100%"
+              autoplay={true}
+              >
+      {images}
+  </Carousel>
+  )
+}
 }
 export default AutomaticCarousel

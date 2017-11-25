@@ -10,25 +10,25 @@ import {
   ProjectReference
 } from "../components"
 
-$(document).ready(function () {
-	$("html, body").animate({
-	scrollTop: $(".app-bar").offset().top
-}, "slow")
-  let lastScroll = 0
-  $(window).scroll(function () {
-  var thisScroll = $(this).scrollTop();    
-	if ($(this).scrollTop() > 1000) {
-    if (lastScroll < thisScroll) {
-      $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeIn()      
-    } else {
-      $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeOut()
-    }
-  } else {
-	  $(".app-bar").css({"position": "relative"}).fadeIn()
-   }
-   lastScroll = thisScroll;
-})
-})
+// $(document).ready(function () {
+// 	$("html, body").animate({
+// 	  scrollTop: $(".app-bar").offset().top
+//   }, "slow")
+//   let lastScroll = 0
+//   $(window).scroll(function () {
+//   var thisScroll = $(this).scrollTop();    
+// 	if ($(this).scrollTop() > 1000) {
+//     if (lastScroll < thisScroll) {
+//       $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeIn()      
+//     } else {
+//       $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeOut()
+//     }
+//   } else {
+// 	  $(".app-bar").css({"position": "relative"}).fadeIn()
+//    }
+//    lastScroll = thisScroll;
+// })
+// })
 
 const loadingPageText = () => {
 	return (
@@ -37,17 +37,19 @@ const loadingPageText = () => {
     </p>
   )
 }
-const imagePaths = ["http://virginiadawsonlanearchitect.com/albums/Meeting42/IMG_6746.JPG","http://virginiadawsonlanearchitect.com/albums/Meeting42/IMG_6743.JPG", "http://virginiadawsonlanearchitect.com/albums/StackpoleResidence/IMG_8452.JPG"]
+const imagePaths = ["https://storage.googleapis.com/architecture-website/albums/Meeting42/IMG_6746.JPG","https://storage.googleapis.com/architecture-website/albums/Meeting42/IMG_6743.JPG", "https://storage.googleapis.com/architecture-website/albums/StackpoleResidence/IMG_8452.JPG"]
+// const imagePaths = ["https://storage.googleapis.com/architecture-website/albums/Meeting42/IMG_6746.JPG"]
+
 const projectReference = {
 	"projectOne": {
 	"name": "Historic",
 	"text": "The firm has also been a recipient of the following prestigious awards: AIA Robert Mills Honor Award, The Historic Charleston Foundation's Whitelaw Founders Award, Several Preservation Society Caropolis Awards",
-	"img": "http://virginiadawsonlanearchitect.com/albums/Meeting42/IMG_6730.JPG"
+	"img": "https://storage.googleapis.com/architecture-website/albums/Meeting42/IMG_6730.JPG"
 },
 	"projectTwo": {
 	"name": "Residential",
 	"text": "With a style unique to the south we have brought Southern Traditional Style to a contemporary era.",
-	"img": "http://virginiadawsonlanearchitect.com/albums/BaileyIsland/IMG_4953.JPG"
+	"img": "https://storage.googleapis.com/architecture-website/albums/BaileyIsland/IMG_4953.JPG"
 }, 
 	"projectThree": {
 	"name": "Commercial",

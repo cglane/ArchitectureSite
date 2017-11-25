@@ -6,7 +6,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
   devtool: 'cheap-module-source-map',
-
   entry: [
     './main.js',
     './assets/scss/main.scss',

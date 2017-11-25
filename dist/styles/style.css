@@ -1,0 +1,206 @@
+body {
+  background: white;
+  padding: 0px;
+  margin: 0px; }
+
+p {
+  font-family: "Arial Bold";
+  font-size: 13px;
+  line-height: 25px;
+  color: #333333;
+  margin: 0px; }
+
+a {
+  text-decoration: none; }
+
+.automatic-carousel {
+  height: 100vh !important;
+  background-color: #ffffff;
+  overflow: hidden; }
+
+.app-bar {
+  transform: matrix(1, 0, 0, 1, 0, 44);
+  font-size: 20px;
+  margin-top: -5%;
+  background-color: #eaeaea;
+  line-height: 25px; }
+  .app-bar td {
+    padding: 2%; }
+
+.app-bar li {
+  width: 15%;
+  display: inline-block; }
+  .app-bar li a {
+    color: #333333; }
+
+.app-bar li:hover {
+  text-decoration: underline; }
+
+#vdl {
+  font-size: 21px;
+  font-size: 21px;
+  color: #333333; }
+
+#associates {
+  font-size: 24px;
+  color: #7f7f7f; }
+
+.vdl-name {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  font-size: 56px;
+  letter-spacing: 1px;
+  top: 200px;
+  text-transform: uppercase; }
+  .vdl-name .vdl {
+    color: white; }
+  .vdl-name .associates {
+    color: #7f7f7f;
+    opacity: .6; }
+
+.app {
+  font-family: 'cgreg';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+  line-height: 120%;
+  position: relative; }
+
+.container-text {
+  background: #eaeaea;
+  padding: 100px 80px 200px;
+  font-size: 56px;
+  line-height: 135%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  .container-text p {
+    font-size: 42px;
+    line-height: 50px; }
+
+.contact-block {
+  background: #eaeaea;
+  padding: 60px 0;
+  padding-left: 70px; }
+  .contact-block p {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.project-reference {
+  padding: 10%; }
+  .project-reference h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black; }
+  .project-reference .project-reference-block {
+    margin-top: 10%; }
+    .project-reference .project-reference-block .text-right {
+      text-align: right; }
+    .project-reference .project-reference-block .text-left {
+      text-align: left; }
+    .project-reference .project-reference-block div {
+      padding: 4%;
+      width: 40%;
+      overflow: none;
+      display: inline-block;
+      vertical-align: top; }
+      .project-reference .project-reference-block div img {
+        max-width: 100%; }
+      .project-reference .project-reference-block div img:hover {
+        -webkit-filter: brightness(70%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease; }
+
+.footer {
+  background-color: #333333;
+  width: 100%; }
+  .footer li {
+    min-width: 45%;
+    display: inline-block;
+    color: white;
+    font-size: 1.2em; }
+    .footer li a {
+      color: white; }
+  .footer .at-vdl {
+    color: #7f7f7f;
+    min-width: 20%;
+    padding-right: 10%; }
+
+.profile-page p {
+  font-size: 34px;
+  line-height: 30px; }
+
+.profile-page .awards-block {
+  background: white;
+  text-align: center; }
+  .profile-page .awards-block p {
+    font-size: 20px;
+    text-decoration: underline black;
+    padding-bottom: 5%; }
+
+.project-landing-page .project-list {
+  margin-top: 5%; }
+
+.project-landing-page .img-block {
+  max-width: 25%;
+  max-height: 300px;
+  display: inline-block;
+  margin: 2%; }
+  .project-landing-page .img-block h4 {
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;
+    padding: 20px 0 32px 0;
+    font-size: 16px; }
+  .project-landing-page .img-block img {
+    max-width: 100%;
+    overflow: none;
+    max-height: 200px; }
+
+.project-landing-page .img-block:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.contact-page .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.counter-carousel-class .slick-list {
+  max-height: 500px !important;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  cursor: pointer; }
+
+.counter-carousel-class .dots-counter-carousel {
+  text-align: center; }
+  .counter-carousel-class .dots-counter-carousel li {
+    width: 5%;
+    display: inline-block;
+    font-size: 20px; }
+  .counter-carousel-class .dots-counter-carousel li:hover {
+    text-decoration: underline; }
+
+.counter-carousel-class img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.project-page .project-name {
+  width: 100%;
+  margin: 5%;
+  text-align: center;
+  text-transform: uppercase; }

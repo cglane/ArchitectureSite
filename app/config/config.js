@@ -20,8 +20,7 @@ const config = {
         'Walterboro': 'The Walterboro Residence is located in the quaint village of Walterboro, close to an hour from Downtown Charleston. The home, while historic, was updated with modern features, while incorporating the clients eclectic design decisions.',
         'BaileyIsland': 'The Bailey Island Residence is located near Edisto Island in coastal South Carolina. The project brought the newest design elements into harmony with Southern Traditional country style. '
       },
-    'baseUrl': 'http://virginiadawsonlanearchitect.com/albums'
-    // 'baseUrl': 'https://storage.cloud.google.com/architecture-website/albums'
+    'baseUrl': 'https://storage.cloud.google.com/architecture-website/albums'
     
 }
 export default config
