@@ -37,7 +37,7 @@ const loadingPageText = () => {
     </p>
   )
 }
-const imagePaths = ["bedswing2-welcome-short.png", "bedswing2-welcome-short.1.png"]
+const imagePaths = ["http://virginiadawsonlanearchitect.com/albums/Meeting42/IMG_6746.JPG","http://virginiadawsonlanearchitect.com/albums/Meeting42/IMG_6743.JPG", "http://virginiadawsonlanearchitect.com/albums/StackpoleResidence/IMG_8452.JPG"]
 const projectReference = {
 	"projectOne": {
 	"name": "Historic",
@@ -46,13 +46,13 @@ const projectReference = {
 },
 	"projectTwo": {
 	"name": "Residential",
-	"text": "Lorem Ipsum",
-	"img": "http://virginiadawsonlanearchitect.com/albums/Meeting42/IMG_6730.JPG"
+	"text": "With a style unique to the south we have brought Southern Traditional Style to a contemporary era.",
+	"img": "http://virginiadawsonlanearchitect.com/albums/BaileyIsland/IMG_4953.JPG"
 }, 
 	"projectThree": {
 	"name": "Commercial",
-	"text": "Lorem Ipsum",
-	"img": "http://virginiadawsonlanearchitect.com/albums/Meeting42/IMG_6730.JPG"
+	"text": "We specialize in commercial properties that blend historic preservation with the modern design.",
+	"img": "https://ap.rdcpix.com/1107683794/f5eab153773630bc34e0fc8842c8b5a2l-m0xd-w1020_h770_q80.jpg"
 }
 }
 const App = () => {

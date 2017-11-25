@@ -10,11 +10,11 @@ class AutomaticCarousel extends React.Component {
       infinite: true,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 200,
+      autoplaySpeed: 150,
       className: 'custom-carousel-class',
     };
     const images = this.props.imagePaths.map((path, index) => {
-      return (<div key={index}><img src={require(`../../images/${path}`)} /></div>      )
+      return (<div key={index}><img src={path} /></div>      )
     })
     return (
       <Slider className="automatic-carousel" {...settings}>

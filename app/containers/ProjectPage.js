@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'muicss/lib/react/button';
+import config from '../config/config'
 import {
   AppbarCustom,
   ContainerText,
@@ -7,31 +8,30 @@ import {
   CounterCarousel
 } from '../components'
 
-const projectPageText = () => {
+const projectPageText = (x) => {
   return (
     <div>
           <p>
-     Das Hotel Wedina ist ein Boutique-Hotel, welches aus 5 einzelnen Häusern besteht. Das Wedina hat sich der Literatur verschrieben und veranstaltet regelmässig Lesungen mit namhaften Schriftstellern.
-    </p>
-    <br/>
-    <p>
-    Das Haupthaus, das Rote Haus“, war sehr in die Jahre gekommen, eine Sanierung war überfällig.
-    </p>
-    <br/>
+            "{config.projectText[x]}"
+          </p>
     </div>
   )
+}
+const getProjectTitle = (x) => {
+  return config.projectTitles[x]
 }
 
 const ProjectPage = (props) => {
   const projectName = props.match.params.projectName
-  const imagePaths = ['bedswing2-welcome-short.png', 'bedswing2-welcome-short.1.png']
-
+  const imgPaths = config.projectImages[projectName].map((x) => {
+    return `${config.baseUrl}/${projectName}/${x}`
+  })  
   return (
-    <div className="project-name">
+    <div className="project-page">
         <AppbarCustom />
-        <h1>{projectName}</h1>   
-        <CounterCarousel imagePaths={imagePaths}/>
-      <ContainerText  text={projectPageText()}/>
+        <h1 className="project-name">{getProjectTitle(projectName)}</h1>   
+        <CounterCarousel imagePaths={imgPaths}/>
+      <ContainerText text={projectPageText(projectName)}/>
       <Footer />
     </div>
   );

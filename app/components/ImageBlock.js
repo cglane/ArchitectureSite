@@ -8,8 +8,8 @@ class ImageBlock extends React.Component {
 		return (
       <div className="img-block">
         {/* Content goes here */}
-          <a href={`/projects/${this.props.projectName}`} >
-          <img src={require(`../../images/${this.props.imgName}`)} />
+          <a href={`/my-projects/${this.props.projectName}`} >
+          <img src={this.props.imgPath} />
           <h4> {this.props.projectTitle}</h4>
         </a>
       </div>

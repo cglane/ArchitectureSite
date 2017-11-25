@@ -1,4 +1,5 @@
 import React from "react"
+import config from '../config/config'
 import {
   AppbarCustom,
   ContainerText,
@@ -7,29 +8,28 @@ import {
   ProjectImages
 } from "../components"
 
-var imgContent = require('../assets/images/bedswing2-welcome-short.png');//require the image, with url-loader, you will get the base64 encoded string
-
 // Remove In Production
-const projectData = [
-	{
-		"projectName": "myName",
-    'imgName': 'bedswing2-welcome-short.png',
-		"title": "title"
-	}
-]
+const projectData = Object.keys(config.projectImages).map((key) => {
+  return {
+    'projectName': key,
+    'imgPath': `${config.baseUrl}/${key}/${config.projectImages[key][0]}`,
+    'title': config.projectTitles[key]
+  }
+})
+
 
 const blockList = projectData.map((x, index) => {
   return (
     <ImageBlock key={index}
               projectName={x.projectName}
-               imgName={x.imgName}
-               projectTitle="title"/>    
+               imgPath={x.imgPath}
+               projectTitle={x.title}/>    
   )
 })
 const ProjectLandingPage = () => {
 
 	return (
-    <div class="project-landing-page">
+    <div className="project-landing-page">
       <AppbarCustom />
       <div className="project-list">
         {blockList}

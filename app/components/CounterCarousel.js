@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Slider from 'react-slick';
+const basePath = 'http://virginiadawsonlanearchitect.com/albums/';  
 
 class CounterCarousel extends React.Component {
   render (props) {
@@ -13,13 +14,13 @@ class CounterCarousel extends React.Component {
       pauseOnHover: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      className: 'custom-caousel-class',
+      className: 'counter-carousel-class',
       customPaging: function(i) {
         return <span>{i}</span>
       },
     };
     const images = this.props.imagePaths.map((path, index) => {
-      return (<div key={index}><img src={require(`../../images/${path}`)} /></div>      )
+      return (<div key={index}><img src={path} /></div>      )
     })
     return (
       <Slider className="counter-carousel" {...settings}>

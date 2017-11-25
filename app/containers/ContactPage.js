@@ -9,7 +9,7 @@ import {
 
 const ContactPage = () => {
   return (
-    <div classNAme="contact-page">
+    <div className="contact-page">
       <AppbarCustom />
       <ContactBlock  />
       <Footer />

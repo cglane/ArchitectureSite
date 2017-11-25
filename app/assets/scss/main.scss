@@ -26,6 +26,8 @@ a {
 .custom-carousel-class img {
     width: 100%;
     object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 // Appbar
@@ -146,6 +148,7 @@ a {
 }
 .footer {
     background-color: #333333;
+    width: 100%;    
     li {
         min-width: 45%;
         display: inline-block;
@@ -159,5 +162,100 @@ a {
         color: #7f7f7f;
         min-width: 20%;
         padding-right: 10%;
+    }
+}
+//Profile PAge
+.profile-page {
+    p {
+        font-size: 34px;    
+        line-height: 30px;        
+    }
+    .awards-block {
+        background: white;
+        text-align: center;
+        
+        p {
+            font-size: 20px;
+            text-decoration: underline black;
+            padding-bottom: 5%;
+        }
+    }
+}
+
+//Project Landing Page
+.project-landing-page {
+
+    .project-list {
+        margin-top: 5%;
+    }
+    .img-block {
+        max-width: 25%;
+        max-height: 300px;
+        display: inline-block;
+        margin: 2%;
+        h4 {
+            text-transform: uppercase;
+            color: black;
+            letter-spacing: 1px;
+            padding: 20px 0 32px 0;
+            font-size: 16px
+        }
+        img {
+            max-width: 100%;
+            overflow: none;
+            max-height: 200px;
+        }
+    }
+    .img-block:hover img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+}
+//Contact Page
+.contact-page {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+//Project Page
+.counter-carousel-class {
+    .slick-list {
+    max-height:500px !important;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+    }
+    .dots-counter-carousel {
+        text-align: center;
+        li {
+            width:5%;
+            display: inline-block;
+            font-size: 20px;
+        }
+        li:hover {
+            text-decoration: underline;                    
+        }
+    }
+}
+.counter-carousel-class img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.project-page {
+    .project-name {
+        width: 100%;
+        margin: 5%;
+        text-align: center;
+        text-transform: uppercase;    
     }
 }
