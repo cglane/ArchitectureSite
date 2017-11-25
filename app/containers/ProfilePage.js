@@ -9,7 +9,7 @@ import {
 
 const ProfilePage = () => {
   return (
-    <div>
+    <div className="profile-page">
       <AppbarCustom />
       <ContainerText  />
       <Footer />

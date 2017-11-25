@@ -1,5 +1,163 @@
-$color: #262828;
 
+// Global
 body {
-  color: $color;
+    background: white;
+    padding: 0px;
+    margin: 0px
+}
+
+p {
+    font-family: "Arial Bold";
+    font-size: 13px;
+    line-height: 25px;
+    color: #333333;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+.custom-carousel-class {
+    height:100vh !important;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+}
+.custom-carousel-class img {
+    width: 100%;
+    object-fit: cover;
+}
+
+// Appbar
+.app-bar {
+    transform: matrix(1, 0, 0, 1, 0, 44);
+    font-size: 20px;
+    margin-top: -5%;
+    background-color: #eaeaea;
+    line-height: 25px;
+    td {
+        padding: 2%;
+    }
+}
+.app-bar li {
+    width: 15%;
+    display: inline-block;
+    a {
+        color: #333333;        
+    }
+}
+.app-bar li:hover {
+        text-decoration: underline;        
+}
+#vdl {
+    font-size: 21px;    
+    font-size: 21px;    
+    color: #333333; }
+#associates {
+    font-size: 24px;
+    color: #7f7f7f
+}
+// First Page
+.vdl-name {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    font-size: 56px;
+    letter-spacing: 1px;
+    top: 200px;
+    text-transform: uppercase;    
+    .vdl {
+        color: white;
+    }
+    .associates {
+        color: #7f7f7f ;
+        opacity: .6;       
+    }
+}
+.app {
+    font-family: 'cgreg';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333333;
+    line-height: 120%;
+    position: relative;
+}
+
+.container-text {
+    background: #eaeaea;
+    padding: 100px 80px 200px;
+    font-size: 56px;
+    line-height: 135%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    p {
+        font-size:42px;
+        line-height: 50px;
+    }
+}
+.contact-block {
+    background: #eaeaea;
+    padding: 60px 0;
+    padding-left: 70px;
+    p {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+.project-reference {
+    padding: 10%;
+    h3{
+        font-size: 24px;
+        text-transform: uppercase;
+        color: black;        
+    }
+    .project-reference-block {
+        margin-top: 10%;
+        .text-right {
+            text-align: right;
+        }
+        .text-left {
+            text-align: left;
+        }
+        div {
+            padding: 4%;
+            width: 40%;
+            overflow: none;
+            display: inline-block;
+            vertical-align: top;
+            img {
+                max-width: 100%;
+            }
+            img:hover {
+                -webkit-filter: brightness(70%);
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+
+        }
+    }
+}
+.footer {
+    background-color: #333333;
+    li {
+        min-width: 45%;
+        display: inline-block;
+        color: white;        
+        font-size: 1.2em;
+        a {
+            color: white;
+        }
+    }
+    .at-vdl {
+        color: #7f7f7f;
+        min-width: 20%;
+        padding-right: 10%;
+    }
 }

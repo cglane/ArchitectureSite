@@ -29,7 +29,7 @@ const blockList = projectData.map((x, index) => {
 const ProjectLandingPage = () => {
 
 	return (
-    <div>
+    <div class="project-landing-page">
       <AppbarCustom />
       <div className="project-list">
         {blockList}

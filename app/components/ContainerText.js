@@ -4,7 +4,7 @@ import Container from 'muicss/lib/react/container';
 class ContainerText extends React.Component {
   render() {
     return (
-      <Container fluid={true}>
+      <Container className="container-text" fluid={true}>
         <div>{this.props.text}</div>
       </Container>
     );

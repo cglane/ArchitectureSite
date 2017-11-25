@@ -1,5 +1,8 @@
 import React from 'react';
 import Appbar from 'muicss/lib/react/appbar';
+import {
+  Link
+} from 'react-router-dom'
 
 class CustomFooter extends React.Component {
   render() {
@@ -7,12 +10,17 @@ class CustomFooter extends React.Component {
     const s2 = { textAlign: 'right' };
 
     return (
-      <Appbar>
+      <Appbar className="footer">
        <table width="100%">
          <tbody>
            <tr style={s1}>
-             <td className="mui--appbar-height">Left Side</td>
-             <td className="mui--appbar-height" style={s2}>Right Side</td>
+             <td className="mui--appbar-height">
+             <ul>
+                <li><Link to="/profile">Profile</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+              </ul>
+             </td>
+             <td className="mui--appbar-height at-vdl" style={s2}>@VDL Associates LLC 2017</td>
            </tr>
          </tbody>
        </table>

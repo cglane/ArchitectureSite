@@ -4,7 +4,7 @@ import Container from 'muicss/lib/react/container';
 class ContactBlock extends React.Component {
   render() {
     return (
-      <Container fluid={true}>
+      <Container className="contact-block" fluid={true}>
         <p className="h2">
 			Clemens-Schultz-Str. 3–5<br />
 			20359 Hamburg

@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "cross-env": "5.1.1",
+    "jquery": "^3.2.1",
     "muicss": "^0.9.30",
     "react": "16.1.1",
     "react-dom": "16.1.1",

@@ -2,27 +2,30 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-class AutomaticCarousel extends React.Component {
-  render () {
+class CounterCarousel extends React.Component {
+  render (props) {
     const settings = {
-      dots: false,
+      dots: true,
+      dotsClass: 'dots-counter-carousel',      
       infinite: true,
       speed: 500,
       arrows: false,
       pauseOnHover: true,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      className: 'custom-caousel-class',
+      customPaging: function(i) {
+        return <span>{i}</span>
+      },
     };
+    const images = this.props.imagePaths.map((path, index) => {
+      return (<div key={index}><img src={require(`../../images/${path}`)} /></div>      )
+    })
     return (
-      <Slider {...settings}>
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
+      <Slider className="counter-carousel" {...settings}>
+        {images}
       </Slider>
     );
   }
 }
-export default AutomaticCarousel
+export default CounterCarousel

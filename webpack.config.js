@@ -19,7 +19,7 @@ const config = {
 	output: {
 		filename: "bundle.js",
 		path: resolve(__dirname, "dist"),
-		publicPath: "/app/static/",
+		publicPath: "/",
 	},
 
 	context: resolve(__dirname, "app"),
@@ -81,6 +81,10 @@ const config = {
 			}
 			},
 		}),
+		new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
 		new webpack.optimize.ModuleConcatenationPlugin(),
 		new ExtractTextPlugin({ filename: "./styles/style.css", disable: false, allChunks: true }),
 		new CopyWebpackPlugin([{ from: "vendors", to: "vendors" }]),

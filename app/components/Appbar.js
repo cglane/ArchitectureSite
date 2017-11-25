@@ -10,12 +10,12 @@ class AppbarCustom extends React.Component {
     const s2 = { textAlign: 'right' };
 
     return (
-      <Appbar>
+      <Appbar className="app-bar">
        <table width="100%">
          <tbody>
            <tr style={s1}>
              <td className="mui--appbar-height">
-              <Link to="/">VDL Associates</Link>
+              <Link to="/"><span id="vdl">VDL </span><span id='associates'>Associates</span></Link>
              </td>
              <td className="mui--appbar-height" style={s2}>
                 <ul>

@@ -9,7 +9,7 @@ class ImageBlock extends React.Component {
       <div className="img-block">
         {/* Content goes here */}
           <a href={`/projects/${this.props.projectName}`} >
-          <img src={require(`../assets/images/${this.props.imgName}`)} />
+          <img src={require(`../../images/${this.props.imgName}`)} />
           <h4> {this.props.projectTitle}</h4>
         </a>
       </div>
