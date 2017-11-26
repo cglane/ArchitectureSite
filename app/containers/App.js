@@ -10,25 +10,25 @@ import {
   ProjectReference
 } from "../components"
 
-// $(document).ready(function () {
-// 	$("html, body").animate({
-// 	  scrollTop: $(".app-bar").offset().top
-//   }, "slow")
-//   let lastScroll = 0
-//   $(window).scroll(function () {
-//   var thisScroll = $(this).scrollTop();    
-// 	if ($(this).scrollTop() > 1000) {
-//     if (lastScroll < thisScroll) {
-//       $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeIn()      
-//     } else {
-//       $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeOut()
-//     }
-//   } else {
-// 	  $(".app-bar").css({"position": "relative"}).fadeIn()
-//    }
-//    lastScroll = thisScroll;
-// })
-// })
+$(document).ready(function () {
+	$("html, body").animate({
+	  scrollTop: $(".app-bar").offset().top
+  }, "slow")
+  let lastScroll = 0
+  $(window).scroll(function () {
+  var thisScroll = $(this).scrollTop();    
+	if ($(this).scrollTop() > 1000) {
+    if (lastScroll < thisScroll) {
+      $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeIn()      
+    } else {
+      $(".app-bar").css({"position": "fixed", "top": 0, width: "100%"}).fadeOut()
+    }
+  } else {
+	  $(".app-bar").css({"position": "relative"}).fadeIn()
+   }
+   lastScroll = thisScroll;
+})
+})
 
 const loadingPageText = () => {
 	return (
